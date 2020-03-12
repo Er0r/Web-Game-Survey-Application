@@ -1,0 +1,255 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    background:url("background.jpg");
+    overflow: hidden;
+    background-size: cover;
+}
+
+.card1{
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 210px 210px 80px;
+    grid-template-areas: "image" "text" "stats";
+    margin-right: 100px;
+    font-family: roboto;
+    border-radius: 18px;
+    background: white;
+    box-shadow: 5px 5px 15px rgb(0,0,0.9);
+    text-align: center;
+    margin-top: 20px;
+}
+
+.card-image {
+    grid-area: image;
+    background: url("cod.jpg");
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+}
+.buttonadding {
+    box-shadow: 9px -5px 27px 4px #1564ad;
+	background:linear-gradient(to bottom, #79bbff 5%, #378de5 100%);
+	background-color:#79bbff;
+	border-radius:38px;
+	border:3px solid #337bc4;
+	display:inline-block;
+    cursor:pointer;
+   
+	color:black;
+	font-family:Arial;
+	font-size:27px;
+	font-weight:bold;
+	padding:16px 44px;
+	text-decoration:none;
+	text-shadow:4px -5px 3px #528ecc;
+}
+
+.buttonadding:hover {
+	background:linear-gradient(to bottom, #378de5 5%, #79bbff 100%);
+	background-color:#378de5;
+}
+.buttonadding:active {
+	position:relative;
+	top:1px;
+}
+
+
+.card-text{
+    grid-area: text;
+    margin: 25px;
+}
+
+.card-text .date {
+    color:rgb(255,7,110);
+    font-size: 13px;
+}
+
+.card-text p {
+    color: grey;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.card-text h2 {
+    margin-top: 0px;
+    font-size: 28px;
+}
+
+.card-stats {
+    grid-area: stats;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: rgb(255,7,110);   
+}
+
+.card-stats .stat {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    color: white;
+}
+
+.card-stats .type{
+    font-size:11px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.card-stats .value {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.card2{
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 210px 210px 80px;
+    grid-template-areas: "image" "text" "stats";
+    
+    font-family: roboto;
+    border-radius: 18px;
+    background: white;
+    box-shadow: 5px 5px 15px rgb(0,0,0.9);
+    text-align: center;
+    margin-top: 20px;
+}
+
+.card2-image {
+    grid-area: image;
+    background: url("apexlegends.jpg");
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+}
+.card2-text{
+    grid-area: text;
+    margin: 25px;
+}
+
+.card2-text .date {
+    color:rgb(255,7,110);
+    font-size: 13px;
+}
+
+.card2-text p {
+    color: grey;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.card2-text h2 {
+    margin-top: 0px;
+    font-size: 28px;
+}
+
+.card2-stats {
+    grid-area: stats;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: rgb(255,7,110);   
+}
+
+.card2-stats .stat {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    color: white;
+}
+
+.card2-stats .type{
+    font-size:11px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.card2-stats .value {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.card3{
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 210px 210px 80px;
+    grid-template-areas: "image" "text" "stats";
+    margin-left: 100px;
+    font-family: roboto;
+    border-radius: 18px;
+    background: white;
+    box-shadow: 5px 5px 15px rgb(0,0,0.9);
+    text-align: center;
+    margin-top: 20px;
+}
+
+.card3-image {
+    grid-area: image;
+    background: url("pubg.jfif");
+    
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+}
+.card3-text{
+    grid-area: text;
+    margin: 25px;
+}
+
+.card3-text .date {
+    color:rgb(255,7,110);
+    font-size: 13px;
+}
+
+.card3-text p {
+    color: grey;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.card3-text h2 {
+    margin-top: 0px;
+    font-size: 28px;
+}
+
+.card3-stats {
+    grid-area: stats;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: rgb(255,7,110);   
+}
+
+.card3-stats .stat {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    color: white;
+}
+
+.card3-stats .type{
+    font-size:11px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.card3-stats .value {
+    font-size: 22px;
+    font-weight: 500;
+}
